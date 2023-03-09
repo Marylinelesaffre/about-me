@@ -4,4 +4,48 @@
   p {
     color: black
   }
-  
+  html, body {
+    margin: 500;
+    padding: 500;
+    }
+    body {
+      background-color: gray; 
+      font-family: Verdana, sans-serif; 
+      font-size: 100%;
+      }
+
+      h1 {
+        font-size: 200%; 
+        color: navy; 
+        text-align: center;
+        }
+        h2{
+          font-size: 150%; 
+          color: white; 
+          padding-left: 15px;
+          }
+          
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: inline-start;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+          background-color: blue
+      }
+        
