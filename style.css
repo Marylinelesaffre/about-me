@@ -1,4 +1,8 @@
- h1{ text-align: center;
+nav{
+  background-color: skyblue;
+  padding-top: 10px;
+}
+h1{ text-align: center;
     color: blue
   }
   p {text-align: center;
@@ -9,7 +13,7 @@
     padding: 0;
     }
     body {
-      background-color: peru 
+      background-color: white;
       font-family: Verdana, sans-serif; 
       font-size: 100%;
       }
@@ -20,7 +24,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: skyblue
+            
         }
         
         li { text-align: center;
@@ -29,28 +33,89 @@
         
         li a {
             display: block;
-            color: rgb(250, 9, 9)
+            color: black;
             text-align: center;
             padding: 6px 6px;
             text-decoration: none;
         }
 
         li a:hover {
-          background-color: peru
+          background-color: green
       }
       nav {
         display: inline-block;
         text-align: center;
         width: 100%;
     }
-    div {display: flex;
-    justify-content: center;}
+    
+    div{display: flex;
+      margin: auto;
+      width: 300px;
+      height: 300px;
+      justify-content: center;}
+   
 
     table{
         margin: auto;
     }
+    
     h2{text-align: center;}
     
     ol{align-items: center;}
-   
+
+    img{
+      display: block;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+    } 
+    
+    label, #toggle { 
+      display: none;
+
+    }
+    
+     @media all and (max-width: 991px){
+
+    
+       nav
+        {
+            height: 60px;
+        }
+     
+        nav .menu
+        {
+            display: none;
+            flex-direction: column;
+            background: #48435C;
+            height: 220px;
+          }
+            
+        label 
+        {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 50px;
+            color: black;
+            cursor: pointer;
+        }
+     
+        #toggle:checked + .menu {
+            display: flex;
+        }
+    }
+
+.menu a{
+  padding: 0px;
+}
+.dark-mode{background-color:red;color: yellow;}
+
+    
+   .button{color:green; background-color:black;}
+   h1 {color:blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
       
+  
