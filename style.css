@@ -43,11 +43,6 @@ h1{ text-align: center;
         li a:hover {
           background-color: green
       }
-      nav {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-    }
    
     
     div{display: flex;
@@ -72,6 +67,7 @@ h1{ text-align: center;
       margin: auto;
     } 
     
+    
     label, #toggle { 
       display: none;
 
@@ -80,20 +76,20 @@ h1{ text-align: center;
      @media all and (max-width: 991px){
 
     
-       nav.menu
+       nav.main_pages
         {
             height: 60px;
             
         }
      
-        nav.menu
+        nav.main_pages
         {
             display: none;
             flex-direction: column;
             background: #48435C;
             height: 220px;
           }
-          nav .menu a {
+          nav .main_pages a {
             width: 50%;
         }
             
@@ -109,21 +105,33 @@ h1{ text-align: center;
             cursor: pointer;
         }
      
-        #toggle:checked + .menu {
+        #toggle:checked + .main_pages {
             display: flex;
         }
     }
 
-.menu a{
-  padding: 0px;
-}
+
+
+
+
+
 .dark-mode{background-color:red;color: yellow;}
 
     
-   .button{color:green; background-color:white;}
+   .button{color:blue; background-color:white;}
    h1 {color:blue;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
   
-  
+ 
       
+  .t1{
+    border : 2px solid black;
+    width: 50%;
+    height: 50%;
+    
+  }
+  .t2 td, .t2 th{
+    border: 3px solid blue;
+    
+  }
   
